@@ -1,0 +1,11 @@
+---
+layout: base
+---
+
+{% assign pages = site.pages | where_exp: "item", "item.layout == 'home'" | sort: "nav_order" %}
+{% for p in pages %}
+    {% assign section = p.nav_title | truncatewords: 1, "" | downcase %}
+    <article id="{{ section }}" class="panel">
+        {{ p.content }}
+    </article>
+{% endfor %}

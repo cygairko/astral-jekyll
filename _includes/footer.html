@@ -1,0 +1,15 @@
+<!-- Footer -->
+<div id="footer">
+    {% if site.show-footer-nav != false %}
+    <ul class="footer-nav">
+        {% assign footer_pages = site.pages | where: "in_footer", true | sort: "nav_order" %}
+        {% for footer_page in footer_pages %}
+            <li><a href="{{ footer_page.url | relative_url }}">{{ footer_page.nav_title }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <ul class="copyright">      
+        <li>&copy; {{ site.copyright }}</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> <!-- Keep this to maintain license obligations. -->
+    </ul>
+</div>
