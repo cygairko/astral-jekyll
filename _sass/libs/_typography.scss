@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 100 900; /* all weights in the variable font */
   font-display: swap;
-  src: url("{{ '/assets/webfonts/Montserrat-wght.woff2' | relative_url }}") format("woff2");
+  src: url("{{ '/assets/fonts/Montserrat-wght.woff2' | relative_url }}") format("woff2");
 }
 
 /* Montserrat Italic */
@@ -13,5 +13,5 @@
   font-style: italic;
   font-weight: 100 900;
   font-display: swap;
-  src: url("{{ '/assets/webfonts/Montserrat-Italic-wght.woff2' | relative_url }}") format("woff2");
+  src: url("{{ '/assets/fonts/Montserrat-Italic-wght.woff2' | relative_url }}") format("woff2");
 }
