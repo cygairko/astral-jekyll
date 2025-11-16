@@ -5,7 +5,8 @@
 @use 'libs/vendor' as *;
 @use 'libs/breakpoints' as *;
 @use 'libs/html-grid' as *;
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic');
+@use 'libs/typography' as *;
+// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic');
 @import url('fontawesome-all.min.css');
 
 /*
@@ -147,8 +148,8 @@
 	}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 300;
+		font-family: 'Quicksand', sans-serif;
+		// font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
 		line-height: 1.75em;

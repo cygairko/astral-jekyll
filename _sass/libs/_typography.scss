@@ -1,0 +1,8 @@
+// Quicksand regular latin
+@font-face {
+  font-family: "Quicksand";
+  src: url("{{ '/assets/webfonts/quicksand-regular.woff2' | relative_url }}") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
