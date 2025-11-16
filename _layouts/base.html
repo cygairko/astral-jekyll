@@ -15,8 +15,8 @@
             <nav id="nav" aria-label="Main Navigation">
                 {% assign nav_pages = site.pages | where_exp: "item", "item.layout == 'home'" | sort: "nav_order" %}
                 {% for nav_page in nav_pages %}
-                    {% assign section = nav_page.nav_title | truncatewords: 1, "" | downcase %}
-                    <a href="{% if page.url == '/' %}#{{ section }}{% else %}/#{{ section }}{% endif %}" class="{{ nav_page.nav_icon }}"><span>{{ nav_page.nav_title }}</span></a>
+                    {% assign section = nav_page.title | truncatewords: 1, "" | downcase %}
+                    <a href="{% if page.url == '/' %}#{{ section }}{% else %}/#{{ section }}{% endif %}" class="{{ nav_page.nav_icon }}"><span>{{ nav_page.title }}</span></a>
                 {% endfor %}
             </nav>
 
