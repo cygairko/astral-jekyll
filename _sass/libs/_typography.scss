@@ -1,8 +1,17 @@
-// Quicksand regular latin
+/* Montserrat Normal */
 @font-face {
-  font-family: "Quicksand";
-  src: url("{{ '/assets/webfonts/quicksand-regular.woff2' | relative_url }}") format("woff2");
-  font-weight: normal;
+  font-family: "Montserrat";
   font-style: normal;
+  font-weight: 100 900; /* all weights in the variable font */
   font-display: swap;
+  src: url("{{ '/assets/webfonts/Montserrat-wght.woff2' | relative_url }}") format("woff2");
+}
+
+/* Montserrat Italic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("{{ '/assets/webfonts/Montserrat-Italic-wght.woff2' | relative_url }}") format("woff2");
 }
