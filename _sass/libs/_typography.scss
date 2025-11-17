@@ -1,19 +1,19 @@
 // customize variables
-@use '../fontawesome/scss/variables' with (
+@use '../assets/fontawesome/scss/variables' with (
   // customizing $font-path
-  $font-path: '../fontawesome/webfonts',
+  $font-path: '/assets/fontawesome/webfonts',
 );
 
 // load Font Awesome core
-@use '../fontawesome/scss/fontawesome';
+@use '../assets/fontawesome/scss/fontawesome';
 
 // load and make available Font Awesome helpers (mixins, functions, and variables)
-@use '../fontawesome/scss/fa' as fa;
+@use '../assets/fontawesome/scss/fa' as fa;
 
 // load individual Font Awesome styles - add only the ones you plan to use in your project. Here is an example of a project using Classic Solid, Brands, Duotone Solid, and Sharp Duotone Solid icons...
-@use '../fontawesome/scss/solid' as fa-solid;
-@use '../fontawesome/scss/brands' as fa-brands;
-
+@use '../assets/fontawesome/scss/solid' as fa-solid;
+@use '../assets/fontawesome/scss/regular' as fa-regular;
+@use '../assets/fontawesome/scss/brands' as fa-brands;
 
 /* Montserrat Normal */
 @font-face {
