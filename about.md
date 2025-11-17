@@ -3,11 +3,11 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: "Home"
-nav_icon: "fa-regular fa-house"
+title: "About"
+nav_icon: "fa-regular fa-user"
 nav_order: 1
 ---
 
-# Demo page
+# About page
 
 Nothing to show yet.

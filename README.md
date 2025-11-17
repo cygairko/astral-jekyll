@@ -64,9 +64,9 @@ The footer navigation is a simple text-based list of links at the bottom of the 
 ```yaml
 ---
 layout: page
+title: "Privacy"
 in_footer: true
-nav_order: 2
-nav_title: "Privacy"
+nav_order: 1
 ---
 ```
 
@@ -97,7 +97,7 @@ The following are the available front matter options for pages.
 | `layout` | `home` for main content pages that appear in the sidebar nav. `page` for other pages. |
 | `title` | The title of the page, used for the browser tab and social sharing. |
 | `nav_icon` | The Font Awesome icon class for the main navigation item. |
-| `nav_order` | A number to specify the order in the navigation menus. |
+| `nav_order` | A number to specify the order in the navigation menus. Works for both: Pages in main navigation and footer navigation. |
 | `in_footer` | Set to `true` to include the page in the footer navigation. Intended For `layout: page` pages. |
 
 

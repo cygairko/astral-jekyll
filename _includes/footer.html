@@ -4,7 +4,7 @@
     <ul class="footer-nav">
         {% assign footer_pages = site.pages | where: "in_footer", true | sort: "nav_order" %}
         {% for footer_page in footer_pages %}
-            <li><a href="{{ footer_page.url | relative_url }}">{{ footer_page.nav_title }}</a></li>
+            <li><a href="{{ footer_page.url | relative_url }}">{{ footer_page.title }}</a></li>
         {% endfor %}
     </ul>
     {% endif %}
