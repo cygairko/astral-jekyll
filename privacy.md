@@ -1,8 +1,8 @@
 ---
 layout: page
+title: "Privacy"
 in_footer: true
-nav_order: 2
-nav_title: "Privacy"
+nav_order: 1
 ---
 
 # Privacy
