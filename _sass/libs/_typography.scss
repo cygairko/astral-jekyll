@@ -15,3 +15,13 @@
   font-display: swap;
   src: url("/assets/fonts/Montserrat-Italic-wght.woff2") format("woff2");
 }
+
+/* Font Awesome setup */
+
+$fa-font-path: "/assets/fontawesome/webfonts";
+
+/* Load Font Awesome core + the styles you need */
+@import "/assets/fontawesome/scss/fontawesome";
+@import "/assets/fontawesome/scss/solid";
+@import "/assets/fontawesome/scss/regular";
+@import "/assets/fontawesome/scss/brands";
