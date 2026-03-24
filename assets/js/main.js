@@ -70,7 +70,7 @@
 					||	$panel.length == 0) {
 
 						$panel = $panels.first();
-						$link = $nav_links.first();
+						$link = $panel.attr('id') ? $nav_links.first() : $();
 
 					}
 
@@ -80,8 +80,9 @@
 						.hide();
 
 				// Activate link.
-					$link
-						.addClass('active');
+					if ($link.length > 0) {
+						$link.addClass('active');
+					}
 
 				// Reset scroll.
 					$window.scrollTop(0);
@@ -109,7 +110,7 @@
 					else {
 
 						$panel = $panels.first();
-						$link = $nav_links.first();
+						$link = $panel.attr('id') ? $nav_links.first() : $();
 
 					}
 
@@ -120,7 +121,9 @@
 					$nav_links.removeClass('active');
 
 				// Activate target link.
-					$link.addClass('active');
+					if ($link.length > 0) {
+						$link.addClass('active');
+					}
 
 				// Set max/min height.
 					$main
